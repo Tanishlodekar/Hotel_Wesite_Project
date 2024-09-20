@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map with Bottom Panel Details</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Tea With Me</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Location</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Dark Mode -->
+        <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+    </header>
+    <div id="map"></div>
+    <div id="info-panel">
+      <div class="panel-content">
+        <div class="panel-title">
+          <span id="panel-title"></span>
+          <button id="collapse-button">Collapse</button>
+        </div>
+        <p id="panel-description"></p>
+        <div id="image-gallery" class="image-gallery">
+          <div id="image-container" class="image-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
